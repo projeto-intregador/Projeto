@@ -1,0 +1,79 @@
+package pi;
+import java.util.Scanner;
+public class Pi {
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Tela inicio");
+        String inicio;
+        System.out.println("1) Instruções");
+        System.out.println("2) Jogar ");
+        System.out.println("3) Pontos ganhos");
+        System.out.println("4) Créditos");
+        System.out.println("5) Sair");
+        String menu = ler.nextLine();
+        switch(menu){
+            case "1":
+                System.out.println("Cuidado ao responder");                               
+            case "2":                
+                System.out.println("Qual o nome do seu persnoagem ?");
+                String nome = ler.nextLine();
+                System.out.println("Olá "+nome+ " você pretende jogar? ");
+                System.out.println("1)Sim");
+                System.out.println("2)Não");
+                int opcao = ler.nextInt();
+                if(opcao == 1){
+                    System.out.println("Ok responda a seguinte questão ela vale 1 ponto");
+                    System.out.println("Quanto é 1 + 1?");
+                    System.out.println("1");
+                    System.out.println("2");
+                    System.out.println("3");
+                    System.out.println("4");
+                    System.out.println("5");
+                    int resposta = ler.nextInt();
+                    if (resposta == 2){
+                        System.out.println("Parabéns");
+                        int soma = 1 + 0;
+                        System.out.println("Voce tem "+soma+ " ponto");
+                        System.out.println("Pretender continuar jogando? ");
+                        System.out.println("1)Sim");
+                        System.out.println("2)Não");
+                        int escolha = ler.nextInt();
+                        if (escolha == 1){
+                            System.out.println("Ok responda a seguinte questão. ela vale 2 pontos");
+                            System.out.println("Quanto é 2 + 2?");
+                            System.out.println("1");
+                            System.out.println("2");
+                            System.out.println("3");
+                            System.out.println("4");
+                            System.out.println("5");
+                            int resposta2 = ler.nextInt();
+                            if (resposta2 == 4){
+                                System.out.println("Parabens");
+                                soma = soma + 2;
+                                System.out.println("Você tem "+soma+ " pontos");
+                            }else{
+                                System.out.println("Infelizmente você perdeu tudo");
+                            }
+
+                        }else{
+                            System.out.println("Te vemos outro dia");
+                        }
+                    }else{
+                        System.out.println("Infelizmente você perdeu tudo");
+                    }
+                         
+                }else{
+                    System.out.println("Te vemos outro dia obrigado");
+                }
+
+            case "3":
+                System.out.println("");
+               
+            case "4":
+                System.out.println("");
+            
+            case "5":    
+        }
+      
+    }
+}    
