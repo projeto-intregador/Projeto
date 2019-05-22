@@ -1,4 +1,11 @@
-static void menu() {
+
+package pi;
+
+import java.util.Scanner;
+
+public class Pi {
+
+    static void menu() {
         System.out.println("1)Objetivo");
         System.out.println("2)Jogar");
         System.out.println("3)Pontos");
