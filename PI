@@ -1,7 +1,10 @@
+
 package pi;
+
 import java.util.Scanner;
+
 public class Pi {
-    static void menu() {
+     static void menu() {
     System.out.println("1)Objetivo");
     System.out.println("2)Jogar");
     System.out.println("3)Pontos");
@@ -10,25 +13,33 @@ public class Pi {
 static void instrucao(){
     System.out.println("Você deve responder corretamente as perguntas, se aparecer game over você perde, conforme avança as perguntas ficam mais complicadas");
 }
+static void dica(){
+    System.out.println("DICAS: pense bem antes de responder pois pode haver pegadinhas, responda com o número da alternativa");
+ 
+}
+
 static void perguntas(){
     Scanner ler = new Scanner(System.in);
     System.out.println("Qual o nome do seu personagem ?");
     String nome;
     nome = ler.nextLine();
-    System.out.println("Olá "+nome+"");
-    System.out.println(nome+ ", aqui vai dicas importantes");
-    System.out.println("DICAS: pense bem antes de responder pois pode haver pegadinhas, responda com o número da alternativa");
-    System.out.println("Você deve escolhar uma caminho, esquerda ou direita");
+    System.out.println("Olá "+nome);
+    System.out.println("Eu sei que você é uma pessoa que quer provar a sua inteligencia");
+    System.out.println("Você deve participar do programa Quiz Matématico ");
+    
+    
+    System.out.println("Escolha um caminho");
     System.out.println("             |     |");
     System.out.println("             |     |");
     System.out.println("             |     |");
-    System.out.println(" _____________     _______________ ");
-    System.out.println("                                   ");
+    System.out.println(" _____________     _______________   ");
+    System.out.println("                                     ");
+    System.out.println("             você                -> Quiz Matématico ");
     System.out.println(" _____________     _______________");
     System.out.println("Qual caminho ? pra esquerda ou direita ?");
     String caminho = ler.nextLine();
     switch(caminho){
-        case "esquerda":
+        case "esquerda":                      
             System.out.println("Quanto é 50 - 10 ?");
             System.out.println("1) 2");
             System.out.println("2) 10");
@@ -160,6 +171,9 @@ public static void main(String[] args) {
     
 }
 }
+
+
+   
 
 
 
