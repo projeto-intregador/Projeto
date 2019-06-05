@@ -1,18 +1,19 @@
-# 
+
 package pi;
 
 import java.util.Scanner;
 import java.util.Random;
 public class Pi {
-
-     static void menu() {
+    /*
+    função que executa o menu    
+    */
+    static void menu() {       
     System.out.println("1)Objetivo");
     System.out.println("2)Jogar");
     System.out.println("3)Pontos");
     System.out.println("4)Sair");                   
 }     
-    static void instrucao(){
-        
+    static void instrucao(){       
         System.out.println("Você deve responder corretamente as perguntas, se aparecer game over você perde, conforme avança as perguntas ficam mais complicadas");
 }
 static void dica(){
@@ -29,8 +30,21 @@ static void inicio(){
     String dia = ler.nextLine();
     System.out.println("Sua mãe: Ah entendi tem uma coisa pra você no seu quarto");
     System.out.println("Mas o que é isso ?");
+    System.out.println(".");
+    System.out.println(".");
+    System.out.println(".");
+    System.out.println(".");
+    System.out.println(".");
+    System.out.println(".");
+    System.out.println(".");
+    System.out.println(".");
+    System.out.println(".");
+    System.out.println(".");
+    System.out.println(".");
+    System.out.println(".");    
+    System.out.println("Uma carta ");
     System.out.println("________________________________________");
-    System.out.println("| Olá"+nome+" nós do Quiz matematico    | ");
+    System.out.println("| Olá "+nome+" nós do Quiz matematico   | ");
     System.out.println("| convidamos você para participar       | ");
     System.out.println("| do Quiz matématico você irá responder | ");
     System.out.println("| perguntas e terá que provar a sua     | ");
@@ -56,6 +70,10 @@ static void inicio(){
     System.out.println(".");
     System.out.println(".");
     System.out.println(".");
+    System.out.println(".");
+    System.out.println(".");
+    System.out.println(".");
+    System.out.println(".");  
     System.out.println("____________________________  ");
     System.out.println("Rua                   Rua 13  ");
     System.out.println("104                          ");
@@ -63,12 +81,12 @@ static void inicio(){
     System.out.println("      |             |");
     System.out.println("      |             |");
     System.out.println("      |             |");
-    System.out.println("      |   continuar  |");
+    System.out.println("      |   continuar |");
     System.out.println(" ");
     System.out.println("Digite o número da rua ");
     System.out.println("AVISO: Se digitar o número errado irá perder ");
     String nomeRua = ler.nextLine();
-    switch(nomeRua.toLowerCase()){
+    switch(nomeRua){
         case"104":
             System.out.println("Está rua não é a do programa Quiz matématico");
             System.out.println("GAME OVER");
@@ -84,6 +102,12 @@ static void inicio(){
             System.out.println(".");
             System.out.println(".");
             System.out.println(".");
+            System.out.println(".");
+            System.out.println(".");
+            System.out.println(".");
+            System.out.println(".");
+            System.out.println(".");
+            System.out.println(".");            
             System.out.println("       |            |         ");
             System.out.println("_______|            |__________"); 
             System.out.println("Rua                        Rua ");
@@ -103,24 +127,28 @@ static void inicio(){
             }          
     }   
 }
+static int porta(){
+    Scanner ler = new Scanner(System.in);
+    System.out.println("____________    ____________        ");
+    System.out.println("|          |    |          |        ");
+    System.out.println("|          |    |          |        ");
+    System.out.println("|          |    |          |        ");
+    System.out.println("|    1     |    |     2    |        ");
+    System.out.println("|          |    |          |        ");
+    System.out.println("|          |    |          |        ");
+    System.out.println("|          |    |          |        ");
+    System.out.println("|__________|    |__________|        "); 
+    System.out.println("Escolha uma porta ");
+    int portas = ler.nextInt();
+    return portas;
+}
 static void perguntas(){
     Scanner ler = new Scanner(System.in); 
     Random random = new Random();
     System.out.println("Olá você está no Quiz matématico agora");
-    System.out.println("Escolha um caminho");  
-    System.out.println("DIGITE");
-    System.out.println("1 ou 2");
-    System.out.println("             |     |");
-    System.out.println("             |     |");
-    System.out.println("             |     |");
-    System.out.println(" _____________     ______________ ");
-    System.out.println("                                   ");
-    System.out.println(" 1             você                2 ");
-    System.out.println(" _________________________________");
-    System.out.println("AVISO: cada caminho leva para perguntas diferentes ");
-    int caminho = ler.nextInt();
-        if(caminho == 1){
-             System.out.println("Quanto é 50 - 10 ?");
+    int porta = porta();       
+        if(porta == 1){
+            System.out.println("Quanto é 55*3/2*9?");
             System.out.println("1) 2");
             System.out.println("2) 10");
             System.out.println("3) 40");
@@ -135,9 +163,8 @@ static void perguntas(){
                 System.out.println("Agora vamos para a próxima pergunta");
                 System.out.println("");
                 System.out.println("____________________________________");
-                System.out.println("");
-                
-                System.out.println("quanto é 44+6");
+                System.out.println("");              
+                System.out.println("Quanto é 44+6 ? ");
                 System.out.println("1) 2");
                 System.out.println("2) 10");
                 System.out.println("3) 18");
@@ -152,6 +179,7 @@ static void perguntas(){
                     System.out.println("Agora vamos para a próxima pergunta");
                     System.out.println("");
                     System.out.println("____________________________________");
+                    System.out.println("");                         
                     int a = 55;
                     int b = 0;
                     while(b <= 10){                                                
@@ -160,9 +188,29 @@ static void perguntas(){
                     b++;
                 }
                 System.out.println("Qual é o proximo valor da tabuada ?");
-                int tabuada = ler.nextInt();
-                if(tabuada == 605){
+                int esquerda3 = ler.nextInt();
+                if(esquerda3 == 605){
                     System.out.println("Parabéns você avançou para uma próxima etapa");  
+                    System.out.println("Parabéns ");
+                    pontos(ponto);
+                    ponto = 2 + 4;
+                    System.out.println("Você tem "+ponto+ " pontos agora");
+                    System.out.println("Agora vamos para a próxima pergunta");
+                    System.out.println("");
+                    System.out.println("____________________________________");
+                    System.out.println(""); 
+                    System.out.println("Quanto é 44+6 ? ");
+                    System.out.println("2) 10");
+                    System.out.println("3) 18");
+                    System.out.println("4) 50");
+                    System.out.println("5) 6");             
+                    int esquerda4 = ler.nextInt();
+                    if(esquerda4 == 5){
+                    System.out.println("Parabéns você avançou para uma próxima etapa");  
+                    System.out.println("Parabéns ");
+                    pontos(ponto);
+                    ponto = 2 + 4;
+                    System.out.println("Você tem "+ponto+ " pontos agora");                                                                
                     System.out.println("AGORA O MAIOR DESAFIO");
                     System.out.println("Você devera acertar um número aleatorio chutando valores");
                     boolean acertou = false;
@@ -171,7 +219,7 @@ static void perguntas(){
                     long chute = 0;
                     while(tentativas > 0 && acertou == false){
                         System.out.println("Qual o chute?");
-                        chute = ler.nextLong();
+                        chute = ler.nextLong(100);
                         if(numeroSecreto == chute){
                             System.out.println("VOCÊ ACERTOU");
                             acertou = true;
@@ -179,10 +227,15 @@ static void perguntas(){
                             --tentativas;
                             System.out.println("Número muito pequeno "+tentativas+" tentativas restantes");
                         }else{  
-                            --tentativas;
-                            System.out.println("Número muito grande "+tentativas+" tentativas restantes");
+                            --tentativas;                        
+                           System.out.println("Número muito grande "+tentativas+" tentativas restantes");
                         }
                     }
+                    }else{
+                        System.out.println("GAME OVER");
+                    }
+                }else{
+                    System.out.println("GAME OVER");
                 }
                 }else{
                     System.out.println("GAME OVER");
@@ -243,7 +296,8 @@ public static void main(String[] args) {
     Scanner ler = new Scanner(System.in);            
     System.out.println("Bem vindo ao Quiz Matématico");
     System.out.println("Neste jogo você ira responder uma série de perguntas");
-    System.out.println("Você tera que provar que é inteligente");
+    System.out.println("Você tera que provar que é inteligente, você seguira um caminho muito difícil");
+    System.out.println("tera que fazer algumas escolhas e se acertar todas as perguntas, ira se provar um gênio");
     menu();
     System.out.println("Escolha uma opção");
     int opcao = ler.nextInt();             
@@ -256,15 +310,31 @@ public static void main(String[] args) {
             inicio();                
         }else if(opcao2 == 3){
             System.out.println("Você ainda não tem pontos");
-            menu();
-            
+            System.out.println("Escolha uma opção sem ser a 3 ou 1");
+            menu();  
+            int opcao5 = ler.nextInt();
+            if(opcao5 == 2){
+                inicio();
+            }
         }            
     }else if(opcao == 2){
         inicio();
     }else if(opcao == 3){
         System.out.println("Você ainda não tem pontos");
-        System.out.println("Escolha uma opção");
+        System.out.println("Escolha uma opção sem ser a 3");
         menu();
+        int opcao3 = ler.nextInt();
+        if(opcao3 == 1){
+            instrucao();
+            System.out.println("Agora escolha uma opção sem ser a 1 ou 3");
+            menu();
+            int opcao4 = ler.nextInt();
+            if(opcao4 == 2){
+            inicio();
+        }
+        }else{
+            inicio();
+        }
         
         if(opcao == 2){
             inicio();
@@ -273,3 +343,4 @@ public static void main(String[] args) {
     
 }
 }
+
