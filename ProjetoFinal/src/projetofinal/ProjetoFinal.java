@@ -15,7 +15,7 @@ public class ProjetoFinal {
     System.out.println("4)Sair");                   
 }    
     /*
-    * função que motra a instrução    
+    * função que mostra a instrução    
     */
     static void instrucao(){       
         System.out.println("Você deve responder corretamente as perguntas, se aparecer GAME OVER na tela você perde, conforme avança as perguntas ficam mais complicadas");
