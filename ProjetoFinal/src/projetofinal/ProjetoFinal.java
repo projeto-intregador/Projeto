@@ -378,48 +378,20 @@ public static void main(String[] args) {
     System.out.println("Neste jogo você tera uma série de desafio envolvendo matématica ");
     System.out.println("Você tera que provar que é inteligente, você seguira um caminho muito difícil");
     System.out.println("tera que fazer algumas escolhas e se acertar todas as perguntas, ira se provar um gênio");
-    menu();
-    System.out.println("Escolha uma opção");
-    int opcao = ler.nextInt();             
-    if(opcao == 1){
-        instrucao();   
-        System.out.println("Escolha uma opção sem ser a 1");
+       int opcao;
+    do{
         menu();
-        int opcao2 = ler.nextInt();
-        if(opcao2 == 2){
-            inicio();                
-        }else if(opcao2 == 3){
-            System.out.println("Você ainda não tem pontos");
-            System.out.println("Escolha uma opção sem ser a 3 ou 1");
-            menu();  
-            int opcao5 = ler.nextInt();
-            if(opcao5 == 2){
-                inicio();
-            }
-        }            
-    }else if(opcao == 2){
-        inicio();
-    }else if(opcao == 3){
-        System.out.println("Você ainda não tem pontos");
-        System.out.println("Escolha uma opção sem ser a 3");
-        menu();
-        int opcao3 = ler.nextInt();
-        if(opcao3 == 1){
-            instrucao();
-            System.out.println("Ecolha uma opção sem ser a 1 ou 3");
-            menu();
-            int opcao4 = ler.nextInt();
-            if(opcao4 == 2){
+        opcao = ler.nextInt();
+        if(opcao == 1){
+           instrucao(); 
+        }else if (opcao == 2){
             inicio();
-        }
         }else{
-            inicio();
+            System.out.println("Você não tem pontos ainda");          
         }
-        
-        if(opcao == 2){
-            inicio();
-        }
-    }
+            
+    }while(opcao <=3 );
+    
     
 }
-}  
+}
