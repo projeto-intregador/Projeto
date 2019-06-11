@@ -142,20 +142,17 @@ static void perguntas(){
     System.out.println("Olá você está no Quiz matématico agora");
     int porta = porta();      
     if(porta == 1){
-    int vetor [] = new int [10];   
-    System.out.println("Informe valores para este vetor de 10 posições");   
-    for(int i = 0; i < vetor.length; i++){    
-        System.out.print("["+i+"]:");
-        vetor[i] = ler.nextInt();          
-        }
-        int soma = 0;
+    int [] vetor = {20,52,32,7,51}; 
+    System.out.println("VETOR A ");
         for(int i = 0; i < vetor.length; i++){
-            soma = soma + vetor[i];
+            System.out.print(vetor[i]+" ");
         }
-        System.out.println("Qual é a soma total dos valores do vetor ? ");
-        int porta1questao1 = ler.nextInt();            
-        if(porta1questao1 == soma){
-            System.out.println("Parabéns você acertou a soma é "+soma);
+        System.out.println("");
+        System.out.println("Informe o valor da posição 1 do vetor A");
+        int posicao = vetor[1];
+        int vetorA = ler.nextInt();
+        if(vetorA == posicao){
+            System.out.println("Parabéns você acertou a soma é "+vetorA);
             int ponto = 2;
             pontos(ponto);
                 System.out.println("Você tem "+ponto+ " pontos");
@@ -379,19 +376,21 @@ public static void main(String[] args) {
     System.out.println("Você tera que provar que é inteligente, você seguira um caminho muito difícil");
     System.out.println("tera que fazer algumas escolhas e se acertar todas as perguntas, ira se provar um gênio");
        int opcao;
-    do{
+     do{
         menu();
         opcao = ler.nextInt();
         if(opcao == 1){
            instrucao(); 
         }else if (opcao == 2){
             inicio();
-        }else{
+        }else if (opcao == 3){
             System.out.println("Você não tem pontos ainda");          
+        }else{
+            System.out.println("Você saiu");
         }
             
     }while(opcao <=3 );
     
     
 }
-}
+}  
